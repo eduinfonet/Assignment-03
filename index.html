@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meteorite Hocky Club</title>
+    <!-- tailwind Daisy UI link -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!----------google font link ---------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- -------fontawesome link--------- -->
+    <script
+      src="https://kit.fontawesome.com/52801316e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ------tailwind custom color ----------->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F0FFFF",
+              secondary: "#69728F",
+              tertiary: "#7990BE",
+              quaternary: "#f6546a",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- external css link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- -------------navbar section----------------- -->
+      <nav class="container mx-auto lg:px-24 sm:px-20 px-8 my-8">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                  stroke="rgb(248 113 113)"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl hover:bg-white"
+              ><p class="text-4xl text-[#131313]">
+                Hocket<span class="text-red-400">'</span>s
+              </p></a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a class="text-secondary hover:text-red-400 hover:bg-white"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="text-secondary hover:text-red-400 hover:bg-white"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a class="text-secondary hover:text-red-400 hover:bg-white"
+                  >Pages</a
+                >
+              </li>
+              <li>
+                <a class="text-secondary hover:text-red-400 hover:bg-white"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a class="text-secondary hover:text-red-400 hover:bg-white"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <img
+              class="me-4 hidden lg:flex"
+              src="assets/img/Frame.png"
+              alt=""
+            />
+            <a class="btn bg-red-400 text-white text-xl">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+      <!-- <nav class="container mx-auto lg:px-24 sm:px-20 px-8 my-8">
+        <div
+          class="navbar bg-red-400 lg:flex-row flex-row-reverse items-center justify-between"
+        >
+          <div class="navbar-start flex lg:justify-start justify-end">
+            <!-- dropdown menu not showing on lg device 
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                  stroke="#F0FFFF"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-base-100 rounded-box lg:w-40 bg-slate-100 hover:text-2xl text-red-500 opacity-40"
+              >
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Shop</a>
+                <a href="">Contact</a>
+              </ul>
+            </div>
+            <!-- menu item hidden on small device 
+            <div
+              class="hidden lg:flex space-x-4 text-white text-lg font-samibold ps-3"
+            >
+              <a href="">Home</a>
+              <a href="">About</a>
+              <a href="">Shop</a>
+              <a href="">Contact</a>
+            </div>
+          </div>
+          <!-- middle part always showing 
+          <div class="navbar-center lg:flex justify-end">
+            <img src="assets/img/logo.png" alt="" />
+            <h1 class="ml-4 text-2xl font-semibold text-white">Fruit Brust</h1>
+          </div>
+          <!-- right part not show on small device 
+          <div class="navbar-end hidden lg:flex">
+            <div
+              class="bg-white lg:flex lg:items-center justify-end px-6 py-4 rounded-full"
+            >
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="search "
+                class="border-0 outline-0"
+              />
+              <img src="assets/img/Frame.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </nav> -->
+      <!-- -----------carousel section  ----------------------->
+      <section class="container mx-auto lg:px-24 sm:px-20 px-8 my-8">
+        <div class="carousel">
+          <!-- slide 1 -->
+          <div
+            id="slide1"
+            class="carousel-item relative w-full bg-[linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.2)),url(assets/img/banner1.png)] h-[60vh] flex items-center justify-center"
+          >
+            <!-- text and button on caurosel start -->
+            <div class="flex flex-col justify-center space-y-8">
+              <h1 class="text-white text-5xl font-bold text-center">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-white w-2/3 mx-auto text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                voluptatum quibusdam necessitatibus eveniet, imilique explicabo,
+                laboriosam quos sequi.
+              </p>
+              <button
+                class="btn bg-red-400 border-none px-8 text-white text-xl mx-auto"
+              >
+                Button
+              </button>
+            </div>
+            <!-- text and button on caurosel end -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- slide 2 -->
+
+          <div
+            id="slide2"
+            class="carousel-item relative w-full bg-[linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.2)),url(assets/img/banner2.png)] h-[60vh] flex items-center justify-center"
+          >
+            <!-- text and button on caurosel start -->
+            <div class="flex flex-col justify-center space-y-8">
+              <h1 class="text-white text-5xl font-bold text-center">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-white w-2/3 mx-auto text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                voluptatum quibusdam necessitatibus eveniet, imilique explicabo,
+                laboriosam quos sequi.
+              </p>
+              <button
+                class="btn bg-red-400 border-none px-8 text-white text-xl mx-auto"
+              >
+                Button
+              </button>
+            </div>
+            <!-- text and button on caurosel end -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- slide 3 -->
+
+          <div
+            id="slide3"
+            class="carousel-item relative w-full bg-[linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.2)),url(assets/img/banner3.png)] h-[60vh] flex items-center justify-center"
+          >
+            <!-- text and button on caurosel start -->
+            <div class="flex flex-col justify-center space-y-8">
+              <h1 class="text-white text-5xl font-bold text-center">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-white w-2/3 mx-auto text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                voluptatum quibusdam necessitatibus eveniet, imilique explicabo,
+                laboriosam quos sequi.
+              </p>
+              <button
+                class="btn bg-red-400 border-none px-8 text-white text-xl mx-auto"
+              >
+                Button
+              </button>
+            </div>
+            <!-- text and button on caurosel end -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- slide 4 -->
+          <div
+            id="slide4"
+            class="carousel-item relative w-full bg-[linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0.2)),url(assets/img/banner4.png)] h-[60vh] flex items-center justify-center"
+          >
+            <!-- text and button on caurosel start -->
+            <div class="flex flex-col justify-center space-y-8">
+              <h1 class="text-white text-5xl font-bold text-center">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-white w-2/3 mx-auto text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                voluptatum quibusdam necessitatibus eveniet, imilique explicabo,
+                laboriosam quos sequi.
+              </p>
+              <button
+                class="btn bg-red-400 border-none px-8 text-white text-xl mx-auto"
+              >
+                Button
+              </button>
+            </div>
+            <!-- text and button on caurosel end -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hidden h-48 w-2/3 mx-auto bg-white rounded -translate-y-24 shadow-lg lg:flex items-center justify-center"
+        >
+          <div class="flex items-center justify-between space-x-4">
+            <img class="" src="assets/img/fruit1.png" alt="" />
+            <img src="assets/img/fruit2.png" alt="" />
+            <img src="assets/img/fruit3.png" alt="" />
+            <img src="assets/img/fruit4.png" alt="" />
+            <img src="assets/img/fruit5.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="container mx-auto"></main>
+    <footer></footer>
+  </body>
+</html>

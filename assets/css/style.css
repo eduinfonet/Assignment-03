@@ -1,3 +1,45 @@
 body {
   font-family: "Manrope", sans-serif;
 }
+.footer-main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.item01 {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+}
+.item02 {
+  grid-column: 4 / span 6;
+  grid-row: 1 / span 1;
+}
+.item03 {
+  grid-column: 7 / span 9;
+  grid-row: 1 / span 1;
+}
+.item04 {
+  grid-column: 10 / span 12;
+  grid-row: 1 / span 1;
+}
+@media screen and (max-width: 576px) {
+  .footer-main {
+    width: 100%;
+  }
+  .item01 {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+  }
+  .item02 {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+  }
+  .item01 {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+  }
+  .item01 {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+  }
+}

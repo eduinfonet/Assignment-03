@@ -637,10 +637,10 @@
       <!--------------- clients questions section----------------- -->
       <section class="border rounded-lg mx-4">
         <div class="border-y-2 border-dashed border-indigo-300 py-10">
-          <h1 class="text-[#131318] lg:text-4xl text-3xl font-bold text-center">
+          <h1 class="text-[#131318] lg:text-4xl text-2xl font-bold text-center">
             Clients Qusetions
           </h1>
-          <p class="lg:w-2/3 mx-auto text-center px-10 py-10">
+          <p class="lg:w-2/3 mx-auto text-center py-10">
             Asked us your question. General knowledge is a vast and diverse
             field that encompasses a wide range of topics, from history and
             geography to science and current events. It is an essential part of
@@ -650,14 +650,14 @@
         <div
           class="flex flex-col lg:flex-row gap-10 items-center justify-center border-2 rounded-lg border-stone-300 my-10"
         >
-          <div class="flex-1 p-6">
+          <div class="flex-1 p-4">
             <img src="assets/img/11.png" alt="" />
           </div>
           <!-- clients question -->
-          <div class="flex-1 p-6">
+          <div class="flex-1 p-2">
             <div class="collapse collapse-plus bg-base-200 mt-2">
               <input type="radio" name="my-accordion-2" checked="checked" />
-              <div class="collapse-title text-xl font-medium">
+              <div class="collapse-title text-xl font-normal">
                 Our Equipment
               </div>
               <div class="collapse-content">
@@ -671,7 +671,7 @@
 
             <div class="collapse collapse-plus bg-base-200 mt-2">
               <input type="radio" name="my-accordion-2" />
-              <div class="collapse-title text-xl font-medium">
+              <div class="collapse-title text-xl font-normal">
                 Hockey Training
               </div>
               <div class="collapse-content">
@@ -685,7 +685,7 @@
 
             <div class="collapse collapse-plus bg-base-200 mt-2">
               <input type="radio" name="my-accordion-2" />
-              <div class="collapse-title text-xl font-medium">
+              <div class="collapse-title text-xl font-normal">
                 Private Lessons
               </div>
               <div class="collapse-content">
@@ -697,7 +697,7 @@
             </div>
             <div class="collapse collapse-plus bg-base-200 mt-2">
               <input type="radio" name="my-accordion-2" />
-              <div class="collapse-title text-xl font-medium">Ski Touring</div>
+              <div class="collapse-title text-xl font-normal">Ski Touring</div>
               <div class="collapse-content">
                 <p>
                   Ski touring is skiing in the backcountry on unmarked or
@@ -708,7 +708,7 @@
             </div>
             <div class="collapse collapse-plus bg-base-200 mt-2">
               <input type="radio" name="my-accordion-2" />
-              <div class="collapse-title text-xl font-medium">Booking</div>
+              <div class="collapse-title text-xl font-normal">Booking</div>
               <div class="collapse-content">
                 <p>
                   Please note, you will need to redeem your ticket confirmation
@@ -720,7 +720,7 @@
             </div>
             <div class="collapse collapse-plus bg-base-200 mt-2">
               <input type="radio" name="my-accordion-2" />
-              <div class="collapse-title text-xl font-medium">Pricings</div>
+              <div class="collapse-title text-xl font-normal">Pricings</div>
               <div class="collapse-content">
                 <p>
                   Hockey ticket prices vary depending on the game, the seat
@@ -756,7 +756,7 @@
         <!-- main div -->
         <div class="grid lg:grid-cols-3 grid-cols-1 gap-10 py-10">
           <!-- contact left side -->
-          <div class="flex flex-col gap-10 lg:w-80 lg:px-10 px-5 lg:mx-10 mx-5">
+          <div class="flex flex-col gap-10 border p-5">
             <div class="bg-[#e1ff0024] rounded-lg lg:p-5 p-3">
               <img class="" src="assets/img/Group1.png" alt="" />
               <p class="text-[10px] text-slate-400">Phone Number</p>
@@ -775,11 +775,9 @@
           </div>
 
           <!-- contact form right side -->
-          <div class="flex flex-col w-100% mx-auto">
+          <div class="flex flex-col w-100% lg:col-span-2">
             <!-- name email etc.parent start -->
-            <div
-              class="grid gap-10 lg:grid-cols-2 grid-cols-1 lg:w-[700px] lg:px-5 px-3 lg:mx-10 mx-3 justify-center"
-            >
+            <div class="grid gap-10 lg:grid-cols-2 grid-cols-1 justify-between">
               <!-- name -->
               <div class="flex flex-col">
                 <label for="Your Name">Your Name</label>
@@ -824,34 +822,35 @@
                   placeholder="Your Phone No"
                 />
               </div>
-              <div class="py-10 flex justify-start lg:w-[700px]">
-                <textarea
-                  placeholder="Your Message here"
-                  class="textarea textarea-bordered lg:w-[680px] w-[250px]"
-                ></textarea>
-              </div>
             </div>
 
-            <div class="flex justify-center items-center">
-              <button
-                class="btn bg-red-400 text-white lg:w-[700px] w-100% px-20"
-              >
-                Send Message
-              </button>
-            </div>
+            <textarea
+              placeholder="Your Message here"
+              class="my-10 border p-5 h-[50%] rounded-lg shadow-lg"
+            ></textarea>
+
+            <button
+              class="btn flex bg-red-400 text-white w-100% px-20 col-span-2"
+            >
+              Send Message
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center w-100% bg-slate-100 rounded-lg py-5 my-10"
+        >
+          <h1 class="text-xl font-bold">Social Media</h1>
+
+          <div class="*:px-2">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
           </div>
         </div>
       </section>
 
       <!-- social icons -->
-      <div class="text-center bg-slate-100 rounded-lg py-5 mx-auto my-10">
-        <h1 class="text-xl font-bold">social Media</h1>
-
-        <i class="fa-brands fa-twitter mx-2"></i>
-        <i class="fa-brands fa-facebook-f mx-2"></i>
-        <i class="fa-brands fa-instagram mx-2"></i>
-        <i class="fa-brands fa-github mx-2"></i>
-      </div>
     </main>
     <!-- footer section -->
     <footer class="bg-[#131318] py-20">
@@ -876,8 +875,8 @@
         </div>
         <!-- footer middle 1 -->
 
-        <div class="flex justify-center gap-40">
-          <div class="flex flex-col space-y-4">
+        <div class="flex justify-between gap-35 px-10">
+          <div class="flex flex-col lg:items-start items-center space-y-4">
             <a class="text-2xl">Company</a>
             <a class="">Branding</a>
             <a class="">Design</a>
@@ -885,7 +884,7 @@
             <a class="">Advertisement</a>
           </div>
           <!-- footer middle 2 -->
-          <div class="flex flex-col space-y-4">
+          <div class="flex flex-col lg:items-start items-center space-y-4">
             <a class="text-2xl">Support</a>
             <a class="">About us</a>
             <a class="">Contact</a>
